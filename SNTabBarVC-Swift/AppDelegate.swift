@@ -15,7 +15,25 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
-        // Override point for customization after application launch.
+
+        let vc1 = UIViewController()
+        vc1.tabBarItem.title = "哈哈"
+        vc1.tabBarItem.image = UIImage.init(named: "numberDefault")
+        vc1.tabBarItem.selectedImage = UIImage.init(named: "numberSelected")
+        let nav1 = UINavigationController.init(rootViewController: vc1)
+        
+        let vc2 = UIViewController()
+        vc2.tabBarItem.title = "呵呵"
+        vc2.tabBarItem.image = UIImage.init(imageLiteral: "orderDefault")
+        vc2.tabBarItem.selectedImage = UIImage.init(named: "orderSelected")
+        let nav2 = UINavigationController.init(rootViewController: vc2)
+
+        
+        
+        let tabBarVC = SNTabBarController()
+        tabBarVC.viewControllers = [nav1,nav2]
+//        tabBarVC.setViewControllers([nav1,nav2], animated: false)
+        self.window?.rootViewController = tabBarVC
         return true
     }
 

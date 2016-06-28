@@ -14,6 +14,10 @@
 		4B1974791D220C6500E96156 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4B1974771D220C6500E96156 /* LaunchScreen.storyboard */; };
 		4B1974841D220C6500E96156 /* SNTabBarVC_SwiftTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B1974831D220C6500E96156 /* SNTabBarVC_SwiftTests.swift */; };
 		4B19748F1D220C6500E96156 /* SNTabBarVC_SwiftUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B19748E1D220C6500E96156 /* SNTabBarVC_SwiftUITests.swift */; };
+		4B19749E1D220C9000E96156 /* SNTabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B19749D1D220C9000E96156 /* SNTabBar.swift */; };
+		4B1974A01D220CA500E96156 /* SNTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B19749F1D220CA500E96156 /* SNTabBarController.swift */; };
+		4B1974A21D22110500E96156 /* SNTabBarItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B1974A11D22110500E96156 /* SNTabBarItem.swift */; };
+		4B1974A41D225AB000E96156 /* SNConst.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B1974A31D225AB000E96156 /* SNConst.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +51,10 @@
 		4B19748A1D220C6500E96156 /* SNTabBarVC-SwiftUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "SNTabBarVC-SwiftUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		4B19748E1D220C6500E96156 /* SNTabBarVC_SwiftUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SNTabBarVC_SwiftUITests.swift; sourceTree = "<group>"; };
 		4B1974901D220C6500E96156 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4B19749D1D220C9000E96156 /* SNTabBar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SNTabBar.swift; sourceTree = "<group>"; };
+		4B19749F1D220CA500E96156 /* SNTabBarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SNTabBarController.swift; sourceTree = "<group>"; };
+		4B1974A11D22110500E96156 /* SNTabBarItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SNTabBarItem.swift; sourceTree = "<group>"; };
+		4B1974A31D225AB000E96156 /* SNConst.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SNConst.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,6 +105,7 @@
 		4B19746D1D220C6500E96156 /* SNTabBarVC-Swift */ = {
 			isa = PBXGroup;
 			children = (
+				4B19749C1D220C7E00E96156 /* SNTabBarVC */,
 				4B19746E1D220C6500E96156 /* AppDelegate.swift */,
 				4B1974701D220C6500E96156 /* ViewController.swift */,
 				4B1974721D220C6500E96156 /* Main.storyboard */,
@@ -123,6 +132,17 @@
 				4B1974901D220C6500E96156 /* Info.plist */,
 			);
 			path = "SNTabBarVC-SwiftUITests";
+			sourceTree = "<group>";
+		};
+		4B19749C1D220C7E00E96156 /* SNTabBarVC */ = {
+			isa = PBXGroup;
+			children = (
+				4B19749D1D220C9000E96156 /* SNTabBar.swift */,
+				4B19749F1D220CA500E96156 /* SNTabBarController.swift */,
+				4B1974A11D22110500E96156 /* SNTabBarItem.swift */,
+				4B1974A31D225AB000E96156 /* SNConst.swift */,
+			);
+			path = SNTabBarVC;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -256,7 +276,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4B19749E1D220C9000E96156 /* SNTabBar.swift in Sources */,
+				4B1974A01D220CA500E96156 /* SNTabBarController.swift in Sources */,
+				4B1974A21D22110500E96156 /* SNTabBarItem.swift in Sources */,
 				4B1974711D220C6500E96156 /* ViewController.swift in Sources */,
+				4B1974A41D225AB000E96156 /* SNConst.swift in Sources */,
 				4B19746F1D220C6500E96156 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
